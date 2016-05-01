@@ -1,0 +1,3 @@
+
+class ManagerPhoto
+end

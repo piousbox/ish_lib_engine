@@ -1,0 +1,4 @@
+
+class ManagerVenue
+
+end
