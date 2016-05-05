@@ -146,6 +146,7 @@ class Ability
 
     can [ :index, :show, :view ], Video
 
+    can [ :home ], Welcome
   end
 end
 

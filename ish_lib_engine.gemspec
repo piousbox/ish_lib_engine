@@ -9,17 +9,20 @@ Gem::Specification.new do |s|
   s.version     = IshLibEngine::VERSION
   s.authors     = ["Victor Piousbox"]
   s.email       = ["piousbox@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of IshLibEngine."
-  s.description = "TODO: Description of IshLibEngine."
+  s.homepage    = ""
+  s.summary     = "Summary of IshLibEngine."
+  s.description = "Description of IshLibEngine."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib,spec}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.2.5.1"
+  s.add_dependency "rails", "~> 4.2.6"
   s.add_dependency 'mongoid'
   s.add_dependency 'devise'
+  s.add_dependency 'simple-rss'
+  s.add_dependency 'htmlentities'
+  s.add_dependency 'resque'
   
   s.add_development_dependency "sqlite3"
 end

@@ -1,4 +1,6 @@
-require 'string'
+
+require_relative '../../lib/string'
+
 class Gallery < AppModel2
 
   belongs_to :site
