@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ish_lib_engine (0.0.4)
+    ish_lib_engine (0.0.5)
       devise
       htmlentities
       mongoid
