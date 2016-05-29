@@ -9,7 +9,9 @@ class Video
   field :name, :type => String
   field :descr, :type => String
 
-  default_scope ->{ where({ :is_public => true, :is_trash => false }).order_by({ :created_at => :desc }) }
+  default_scope ->{ 
+    where({ :is_public => true, :is_trash => false }).order_by({ :created_at => :desc }) 
+  }
 
   field :is_trash, :type => Boolean, :default => false
   field :is_public, :type => Boolean, :default => true
@@ -31,7 +33,6 @@ class Video
   validates :user, :presence => true
   
   accepts_nested_attributes_for :site, :tag, :city
-
 
   def self.list
     [['', nil]] + Video.all.order_by( :name => :desc ).map { |item| [ item.name, item.id ] }
