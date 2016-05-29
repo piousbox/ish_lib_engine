@@ -1,3 +1,4 @@
+
 $ ->
   addPhoto = (file) ->
     console.log(file)
