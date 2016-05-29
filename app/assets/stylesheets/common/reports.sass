@@ -1,0 +1,269 @@
+
+@import 'vars'
+
+h2.section,
+.big-button,
+
+  clear: both
+  text-align: center
+
+.discussion
+  padding: 2em
+
+.pagination
+  background: #efefef
+  border-left: 10px solid black
+  display: inline-block
+  padding: 20px
+
+  margin: 1em auto
+
+  a,
+  .current,
+
+    padding: $small
+
+  a
+    border: 1px solid red
+
+
+#reports_show
+  h1
+    margin: 10px 0 0 0
+
+  .meta
+    margin: 0 0 $margin*2 0
+
+  .subhead
+    font-style: oblique !important
+    padding-bottom: 10px
+
+  h3
+    margin-bottom: 1em
+
+  .descr
+    margin-bottom: 50px
+
+    p, ul, ol
+      margin-bottom: 1em
+
+    ul, ol
+      li
+        list-style-type: circle
+        margin-left: 1em
+
+  .descr .ad-large-rectangle
+    float: left
+    margin: 0 1em 1em 0
+
+.report-small
+  clear: both
+  margin-bottom: 2em
+
+  > img
+    float: left
+    margin: 5px 10px 10px 0
+
+  .subhead
+    min-height: 100px
+
+.vote
+  float: left
+
+  > a
+    margin-right: 4px
+    padding: 3px
+    display: block
+
+  .up
+    border: 1px solid green
+    margin-bottom: 3px
+
+  .down
+    border: 1px solid red
+
+
+  .active
+    background: gray
+
+.main-feature-reports
+
+  .item
+    @extend .span-12 !optional
+
+    .wrapper
+      @extend ._wrapper !optional
+      @extend .center !optional
+      
+      h2,
+      > a,
+        text-align: center
+
+      h2,
+      .descr,
+      .subhead,
+        margin: $margin 0 0 0
+
+      img
+        margin: 0 auto
+        @extend ._img_small !optional
+
+      .descr,
+      .subhead,
+        text-align: left
+
+  .item:nth-child(even)
+    @extend .last !optional
+
+  .descr
+    float: left
+    display: inline
+    clear: both
+    width: auto
+
+  .more
+    clear: both
+    text-align: center
+    margin: 0 auto
+    float: left
+    width: 100%
+
+.reports-features
+  @extend .span-12
+  @extend .last
+
+  h2
+    @extend ._feature_h2 !optional
+    display: none
+
+  .item
+    h3
+      margin-bottom: 4px
+
+    .thumb
+      float: left
+      margin: 0 $margin $margin 0
+
+.reports-list
+  h2
+    font-size: 1.6em
+    margin: $margin 0 0
+
+  .item
+    padding-bottom: 1em
+      
+    .thumb
+      float: left
+        
+  .ad-leaderboard
+    margin-bottom: 2.5em
+      
+.reports-recommended
+  margin-bottom: $margin*2
+
+  .item
+    @extend .span-6
+
+    .inner
+      @extend .box !optional
+      @extend ._round-corners !optional
+
+      h3
+        margin-top: .5em
+
+      .thumb
+        text-align: center
+        margin: 0 !important
+
+  .item:nth-child(4n)
+    @extend .last !optional
+
+  .item:nth-child(4n + 1)
+    clear: left
+
+
+#reports_new,
+#reports_edit,
+#reports_create,
+#reports_update,
+  
+  .Lorganizer
+    
+    input#report_name
+      width: 100%
+
+    .descr
+      textarea
+        height: 400px
+
+    h2
+      text-align: center
+      margin: $margin auto
+
+    .check
+      position: relative
+
+      input[type=checkbox]
+        width: $checkbox_size
+        height: $checkbox_size
+        position: absolute
+        top: 0
+        left: 0
+        margin: 0
+
+      label
+        margin-left: $checkbox_size + $margin
+        height: $checkbox_size
+        line-height: $checkbox_size
+
+    .location
+      display: none
+
+    h3.addToggle
+      margin: 3*$margin $margin+$checkbox_size
+
+    .captcha p
+      display: none
+
+    .captcha
+      float: left
+
+    .sign-in,
+      float: left
+      margin-left: $margin
+      height: 130px
+      line-height: 130px
+      padding-left: 20px
+      width: 270px
+      background: #cecece
+      margin-left: 20px
+      border-left: 10px solid gray
+
+    .actions
+      clear: both
+      margin: 3*$margin auto
+      text-align: center
+
+    input[type=submit]
+      font-size: 1.6em
+
+    #report_subhead
+      height: 40px
+
+  .Lapplication-mini
+    .col-1
+      width: 50%
+      float: left
+    .col-2
+      width: 50%
+      float: left
+
+
+.item-mini
+  margin-left: 30px
+  margin-top: 14px
+    
+  h5
+    margin: 0
+    padding: 0
+      

@@ -1,0 +1,387 @@
+/* GENERAL
+
+$paper_fold_margin_left: -28px
+$lang_fold_margin_left: -24px
+
+body
+  background-color: #d9d9d9
+  font-family: tahoma
+  font-size: 16px
+  margin: 0
+
+.body-inner
+  margin: 0 auto
+  width: 960px
+
+a
+  color: #888
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+#header, #content, .main-footer
+  position: relative
+
+/* HEADER
+
+h1
+  text-indent: -9999px
+
+#header
+  padding-top: 1.5em
+
+  img
+    float: left
+    margin-bottom: 10px
+    margin-left: 10px
+  h2
+    position: relative
+    background: url(https://s3.amazonaws.com/ish-assets/resume/user-name-right.png), url(https://s3.amazonaws.com/ish-assets/resume/user-name-left.png)
+    background-repeat: no-repeat
+    background-position: right 0, left 0
+    background-color: transparent
+    font-weight: bold
+    left: 60px
+    padding: 20px 60px 20px 40px
+    position: absolute
+    z-index: 1
+    a
+      color: black
+      text-decoration: none
+  li
+    display: inline-block
+
+  #main_nav
+    li
+      float: left
+      margin-left: $paper_fold_margin_left
+
+#main_nav a,
+#user-menu a
+  float: left
+
+#main_nav
+  bottom: -67px
+  height: 56px
+  left: 240px - $paper_fold_margin_left
+  position: absolute
+  z-index: 1
+  a
+    background: url(https://s3.amazonaws.com/ish-assets/resume/main-nav-right.png), url(https://s3.amazonaws.com/ish-assets/resume/main-nav-left.png)
+    background-repeat: no-repeat
+    background-position: right 0, left 0
+    background-color: transparent
+    border-bottom: 1px solid #888
+    font-size: 14px
+    font-weight: bold
+    padding: 21px 48px 20px
+
+body#users_show #main_nav a.resume_link,
+body#users_resume #main_nav a.resume_link,
+body#users_reports #main_nav a.reports_link,
+body#users_report #main_nav a.reports_link,
+body#users_galleries #main_nav a.galleries_link,
+body#users_gallery #main_nav a.galleries_link,
+body#users_github_page #main_nav a.github_link,
+
+  color: #444
+  border-bottom: 1px solid transparent
+  text-decoration: none
+  background-image: url(https://s3.amazonaws.com/ish-assets/resume/main-nav-right-active.png), url(https://s3.amazonaws.com/ish-assets/resume/main-nav-left.png)
+  z-index: 50
+  position: relative
+
+/* CONTENT */
+#content, 
+.holder
+  -webkit-border-radius: 10px
+  -moz-border-radius: 10px
+  border-radius: 10px
+  border: 1px solid #888
+  clear: both
+
+#content
+  background-color: #fbf672
+  padding: 10px 0
+  min-height: 500px
+
+.holder
+  background-color: #fff
+  height: 500px
+  margin: 0 20px
+  padding: 20px
+  position: relative
+
+.no-holder-inner
+  padding: 0 1.5em 1.5em 1.5em
+
+#main_content, 
+#sidebar
+  float: left
+
+#main_content
+  width: 72%
+  position: relative
+  height: 100%
+
+/* SIDEBAR
+
+#sidebar
+  width: 28%
+  img
+    border: 1px solid #888
+    padding: 3px
+
+  .profile-photo
+    width: 200px
+    height: 200px
+    background: silver
+
+.social_things
+  margin: 20px 0
+  li
+    display: inline-block
+  a
+    display: block
+    float: left
+    height: 32px
+    text-indent: -9999px
+    width: 32px
+
+.facebook
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/facebook.png) no-repeat 0 0 transparent
+
+.twitter
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/twitter.png) no-repeat 0 0 transparent
+
+.linkedin
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/linkedin.png) no-repeat 0 0 transparent
+
+.myspace
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/myspace.png) no-repeat 0 0 transparent
+
+.sharethis
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/sharethis.png) no-repeat 0 0 transparent
+
+.delicious
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/delicious.png) no-repeat 0 0 transparent
+
+.github
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/github.png) no-repeat 0 0 transparent
+
+/* DOWNLOAD
+
+.download_resume a
+  display: block
+  line-height: 32px
+  padding: 0 0 5px 35px
+
+.word a
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/word.png) no-repeat 0 0 transparent
+
+.pdf a
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/pdf.png) no-repeat 0 0 transparent
+.print a
+  background: url(https://s3.amazonaws.com/ish-assets/icons/32x32/print.png) no-repeat 0 0 transparent
+
+
+/* LANGUAGE
+
+.language
+  position: absolute
+  bottom: -36px
+  margin-left: -$lang_fold_margin_left
+  z-index: 1
+
+  li
+    display: inline-block
+    background: url(https://s3.amazonaws.com/ish-assets/resume/language.png) no-repeat 0 0 transparent
+    border-top: 1px solid #888
+    margin-left: $lang_fold_margin_left
+  a
+    display: block
+    float: left
+    text-indent: -9999px
+    height: 34px
+    width: 102px
+
+  .en a
+    background: url(https://s3.amazonaws.com/ish-assets/flags/us.png) no-repeat center transparent
+
+  .ru a
+    background: url(https://s3.amazonaws.com/ish-assets/flags/ru.png) no-repeat center transparent
+
+  .pt a
+    background: url(https://s3.amazonaws.com/ish-assets/flags/br.png) no-repeat center transparent
+
+body.en .language .en,
+body.ru .language .ru,
+body.pt .language .pt,
+  border-top: 1px solid #fff
+  z-index: 10
+  position: relative
+
+.login-register
+  float: right
+  margin: 20px 0 0 0
+  li
+    border-right: 1px solid #888
+    display: inline
+
+  li:last-child
+    border: 0
+      
+  a
+    padding: 0 10px
+  .last
+    border: 0
+    padding-right: 0
+      
+  form,
+  form > *,
+    
+    display: inline
+
+.footer
+  .login-register
+    margin-bottom: 20px
+
+.Lresume
+  .inner
+    overflow: auto
+    height: 100%
+
+  h2
+    font-size: 1.2em
+    margin: 0
+    padding: 0
+      
+  .item .inner
+    overflow: hidden
+
+  .users-list
+    margin-top: 1.5em
+
+    .item
+      float: left
+      width: 50%
+
+  .reports-list
+    .ad-large-rectangle
+      margin-bottom: 1em
+
+    .links-horizontal-large
+      margin-bottom: 1em
+
+  .reports-show
+    h2
+      font-size: 1.8em
+        
+    .descr
+      margin-bottom: 100px
+        
+      p
+        margin-bottom: 1.2em
+      
+#application__footer
+  .shtick,
+  #login_register,
+  .multinational,
+    width: 33%
+    float: left
+
+#multinational
+  z-index: 2
+
+
+
+#accordion
+  position: absolute
+  top: 30px
+  // top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  // height: 100%
+  margin: 0
+
+  h3
+    padding-left: 2em
+    border: 2px solid gray !important
+    margin-bottom: 3px
+
+  > div
+    overflow: auto
+    height: 330px
+
+  h4
+    margin-top: 2em
+    padding-top: 2em
+    border-top: 5px solid #cecece
+
+  .first
+    h4
+      margin-top: 0
+      border-top: 0
+      padding-top: 0
+
+  ul
+    padding-left: 1em
+
+    li
+      display: block
+      margin-bottom: .5em
+      background: url('https://s3.amazonaws.com/ish-assets/icons/14x14/bullet.png')
+      background-repeat: no-repeat
+      padding-left: 19px
+
+  p
+    padding: 10px
+
+.main-footer
+  clear: both
+  min-height: 50px
+  padding-bottom: 50px
+  position: relative
+  float: right
+  width: 100%
+
+
+.reports-list
+  .item
+    margin-bottom: 1.5em
+    clear: both
+      
+    .thumb
+      float: left
+      padding: 0 10px 10px 0
+        
+    h2
+      margin-bottom: 5px
+        
+.Lresume
+  .report-image
+    margin: 0 1.5em 1.5em 1.5em
+    float: right
+
+#users_report
+  .inner
+    h2
+      margin: 2em 0
+
+.galleries--list
+  .item
+    margin-bottom: 1.5em
+    width: 33%
+    float: left
+
+    h5
+      margin-right: 2em
+        
+    .inner
+      img
+        float: left
+          
+  .item:nth-child(3n+1)
+    clear: left
+      

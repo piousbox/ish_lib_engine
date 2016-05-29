@@ -1,0 +1,98 @@
+
+@import 'vars'
+$footer_height: 100px
+$footer_padding: 8px
+
+.Lapplication-mini
+  min-height: 100%
+  position: relative
+
+  .footer-padding
+    display: block
+    height: $footer_height + $footer_padding
+    clear: both
+
+  .logo
+    @extend .span-3
+
+  .mini-header
+    min-height: 10px
+    line-height: 10px
+
+    margin-bottom: $margin_mini
+    padding-bottom: 4px
+    height: 30px
+    border-bottom: 1px dashed #cecece
+
+    .logo
+      float: left
+      width: $logo_mini
+      padding-right: $margin_mini
+      height: 30px
+      line-height: 30px
+      padding-top: 6px
+
+    ul.main-menu
+      float: left
+      line-height: 10px
+
+    .login-register
+      float: right
+        
+      ul
+        line-height: 30px
+          
+      .sign-out
+        display: none
+          
+.mini-footer-2
+  -moz-border-top-left-radius: 15px
+  border-top-left-radius: 15px
+  -moz-border-top-right-radius: 15px
+  border-top-right-radius: 15px
+  background: $blue_bg
+  height: 15px
+  margin-top: 2em
+  width: 100%
+
+.mini-footer
+  clear: both
+  background: $blue_bg
+
+  padding-top: 1em
+  padding-bottom: 3em
+
+  > *
+    @extend .span-8
+    margin-bottom: 1em
+
+  > *:nth-child(3n)
+    @extend .last
+
+  > *:nth-child(3n + 1)
+    @extend .clear
+    text-align: right
+
+  .set-layout
+    li
+      margin-left: $margin*2
+
+  .set-locale > div
+    float: right
+    margin: 0 0 0 1em
+
+  .login-register
+    li,
+    form,
+    div,
+      display: inline
+
+    li
+      border-left: 2px solid black
+      padding-left: 12px
+      margin-left: 12px
+
+    li:nth-child(1)
+      border-left: 0
+      padding-left: 0
+      margin-left: 0

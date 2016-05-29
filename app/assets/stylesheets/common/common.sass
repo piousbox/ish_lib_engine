@@ -1,0 +1,111 @@
+@import 'vars'
+
+body,
+html,
+.Lcities,
+.Lapplication,
+.Lcities .left-container .inner > div,
+.Lcities .right-container .inner > div,
+  height: 100%
+  position: relative
+  font-family: 'Oxygen', sans-serif
+
+.inline,
+.inline *,
+  display: inline
+.absolute
+  position: absolute
+.relative
+  position: relative
+#loading,
+.loading,
+  display: none
+
+.alert,
+.error,
+#error_explanation li,
+  border: 1px solid black
+  background: #fffd7c
+  padding: .5em 1em
+  margin-bottom: .5em
+
+.notice,
+.message,
+  border: 1px solid black
+  background: #bceaf6
+  padding: .5em 1em
+  margin-bottom: .5em
+
+.float-right
+  float: right
+
+.height-20
+  height: 20px
+.height-50
+  height: 50px
+.height-2
+  height: 2em
+.height-4
+  height: 4em
+    
+.center
+  text-align: center
+  margin-right: auto
+  margin-left: auto
+
+ul
+  margin: 0
+  padding: 0
+
+  li
+    margin: 0
+    padding: 0
+    list-style-type: none
+    display: inline
+
+.bg-image
+  width: 100px
+  height: 100px
+  background: url('https://s3.amazonaws.com/ish-assets/missing.png')
+  float: left
+  margin: 0 10px 10px 0
+
+.bold
+  font-weight: bold
+
+.share_this
+  margin-top: $margin
+
+.small-font
+  font-size: 80%
+
+.small
+  display: inline
+  font-size: 80%
+  padding-left: 4px
+
+.wrapper
+  @extend .box
+
+.meta
+  font-style: oblique
+  margin-bottom: $margin/2
+
+.thumb
+  margin: 0 5px 5px 0
+
+li.city > a
+  padding-left: 3em
+
+.descr ul,
+.descr ol,
+  li
+    display: block !important
+
+.location
+  padding: .5em
+  border: 1px solid red
+  border-top: 5px solid red
+
+ul.block li
+  display: block

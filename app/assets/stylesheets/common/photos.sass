@@ -1,0 +1,32 @@
+
+@import 'vars'
+
+#photos_new
+  div.descr
+    display: none
+
+.set-profile-photo
+  width: 100px
+  height: 100px
+  @extend .thumb
+  position: relative
+
+.set-profile-photo-tooltip
+  position: absolute
+  top: $margin*3
+  left: $margin*3
+
+  width: 200px
+  display: none
+  background: yellow
+  border: 1px solid gray
+
+  .inner
+    padding: $margin/2
+
+div#file_upload
+  border: 1px solid red
+
+.photos-meta
+  margin-top: .5em
+    

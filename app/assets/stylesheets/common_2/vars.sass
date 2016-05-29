@@ -1,0 +1,235 @@
+  
+$border_width: 2px
+
+$logo_height: 100px
+$header_height: 50px
+$footer_height: 40px
+$main_footer_height: 150px
+$manager_footer_height: 200px
+
+$logo: 100px
+$collapsed: 20px
+$mini: $collapsed
+
+$gutter: 24px
+$small: .5em
+$medium: $small * 2
+$large: $medium * 2
+$tiny: $small / 2
+$round: 10px
+
+$border: 1px solid black
+$border_white: 1px solid white
+
+$bg_cyan: #d7e1ff // #e6e6e6
+$bg_body: white // #e7edff
+$light_em: #fffaab
+$light_bg: #fefefe
+$bg_dark: #5d71ab
+$black: black
+$white: white
+$bg_black: $black
+$gray: #cccccc
+$body_bg: url(https://s3.amazonaws.com/ish-assets/backgrounds/gray-1.jpg) repeat scroll 0 0 transparent
+$blue: #CCD0DB
+$blue_bg: #bdd2ff
+
+$small_margin: 5px
+$large_margin: 20px
+$margin: 10px
+
+$feature_title_bg: #efefef
+$emph: $feature_title_bg
+
+$full_width: 960px
+$logo: 100px
+$small: 10px
+$medium: 20px
+$tiny: 5px
+$sidebar: 300px
+
+$menu_secondary_height: 20px
+
+$logo_mini: 20px
+$margin_mini: 5px
+
+$checkbox_size: 30px
+
+.clear
+  clear: both !important
+
+.span-24, .span-12, .span-8, .span-6, .span-3, .last,
+.box, .append-12
+  display: auto
+
+._menu
+  li
+    list-style-type: none
+
+._menu_flat
+  @extend ._menu
+
+  li
+    display: inline
+
+._float_left
+  float: left
+  padding-right: $medium
+
+._float_right
+  float: right
+  margin-left: $medium
+  margin-bottom: $medium
+
+._list
+  h2
+    text-align: center
+    margin: $margin*2
+
+  .item
+    margin-bottom: $margin*3
+
+    h3
+      margin: 0 0 0
+
+
+._galleries_list
+  @extend ._list
+
+  .thumb
+    float: left
+
+
+._reports_list
+  @extend ._list
+
+  .item
+
+    a img
+      float: left
+      margin: 0 $small $small 0
+
+.thumb
+  border: 1px solid #efefef
+  width: 100px
+  height: 100px
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  display: inline-block
+  background: url('https://s3.amazonaws.com/ish-assets/missing.png')
+
+._item
+  img
+    border: 1px solid purple
+    min-width: 100px
+    min-height: 100px
+    margin: 0 $margin $margin 0
+    display: block
+
+  h2
+    margin-bottom: $margin / 2
+    font-size: 1.8em
+
+  img,
+  .more,
+  .descr,
+    float: left
+
+  .more
+    text-align: center
+    margin-left: $margin
+    margin-right: auto
+    display: inline-block
+
+._block
+  display: block !important
+
+._feature_list
+  margin-bottom: 20px
+
+  h2
+    font-size: 1.2em
+    margin: $margin/2 0 0 0
+    text-align: center
+    @extend ._rounded_corners !optional
+    border: 1px solid black
+    padding: $margin/3 0
+    display: block
+
+  .item
+    text-align: center
+
+  .descr,
+  .subhead
+    text-align: left
+
+._img_small
+  min-width: 400px
+  min-height: 200px
+  border: 1px solid white
+  margin: 0 auto
+  display: block
+
+._round-corners,
+._rounded_corners,
+
+  -moz-border-radius: 15px
+  border-radius: 15px
+
+// n_col, 1/total_width_portion
+._4_1
+  @extend .clear
+  @extend .span-24
+
+  .item
+    @extend .span-6
+
+  .item:nth-child(4n)
+    @extend .last
+
+  .item:nth-child(4n+1)
+    @extend .clear
+
+._3_1
+  @extend .clear
+  @extend .span-24
+  .item
+    @extend .span-8
+    margin-bottom: 1em
+
+  .item:nth-child(3n)
+    @extend .last
+
+  .item:nth-child(3n+1)
+    clear: left
+
+._2_1
+  @extend .clear
+  @extend .span-24
+
+  .item
+    @extend .span-12
+    margin-bottom: 1em
+
+  .item:nth-child(2n)
+    @extend .last
+
+  .item:nth-child(2n+1)
+    @extend .clear
+
+._2_2
+  @extend .clear
+  @extend .span-12
+
+  .item
+    @extend .span-3
+    margin-bottom: 1em
+
+  .item:nth-child(4n)
+    @extend .last
+
+  .item:nth-child(4n+1)
+    @extend .clear
+
+._wrapper

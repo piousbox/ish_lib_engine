@@ -1,0 +1,88 @@
+
+@import 'vars'
+
+#venues_index
+  .Lapplication
+    .top-ad
+      display: none
+
+.venues-list
+  @extend ._list
+
+  .item
+    img
+      float: left
+      margin: 0 10px 10px 0
+
+.venue-links
+  ul
+    li
+      a
+        display: block
+        background: url('https://s3.amazonaws.com/ish-assets/backgrounds/transparent_40.png')
+        margin-bottom: 3px
+        padding: $margin/2
+        color: white
+        font-weight: bold
+
+      a:hover
+        background: url('https://s3.amazonaws.com/ish-assets/backgrounds/transparent_40.png') white
+
+#venues_show,
+#venues_report,
+#venues_gallery,
+  .venue-header
+    @extend .span-18
+    margin-bottom: 10px
+
+    ul.features-list
+      clear: both
+      padding-top: 1.5em
+
+      li
+        background: $blue
+
+        a
+          padding: 1em
+          background: $blue
+
+  .venue-map
+    @extend .span-6
+    @extend .last
+    margin-bottom: 1.5em
+
+    .cityname
+      display: none
+      text-align: center
+      color: $gray
+
+  .col-1
+    @extend .span-17
+    @extend .colborder
+
+    h2
+      margin-top: 0
+
+  .col-2
+    @extend .span-6
+    @extend .last
+
+  .features-list
+    .item
+      float: left
+
+      .inner
+
+  .reports-list
+  .galleries-list
+  .users-list
+
+  #venues_show_canvas
+    width: 230px
+    height: 160px
+
+  .ad-leaderboard
+    text-align: center
+    margin: 0 auto 1.5em auto
+    width: 100%
+

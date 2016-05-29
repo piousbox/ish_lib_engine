@@ -1,0 +1,13 @@
+/*
+ *
+ *= require reset-min
+ *
+ *= require fancybox/jquery.fancybox.css
+ *
+ *= require ./common/utils
+ *= require ./common/_ads
+ *= require ./common/galleries
+ *= require_directory ./resume
+ *= require ./common/users
+ *
+*/

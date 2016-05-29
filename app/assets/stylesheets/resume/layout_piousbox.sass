@@ -1,0 +1,56 @@
+
+@import 'vars'
+
+#application__header
+  min-height: $logo + $small
+  margin-bottom: $medium
+  border-bottom: $tiny solid $gray
+  position: relative
+
+  h1
+    margin: 0
+    line-height: $logo
+    height: $logo
+
+    a
+      color: black
+
+  h1,
+  .subhead
+    float: left
+    margin-left: $logo + $small
+
+  .subhead
+    position: absolute
+    top: 65px
+
+  ul.main-menu
+    position: absolute
+    right: 0
+    margin: 0
+    padding: 0
+
+    li
+      z-index: 20
+      float: left
+      list-style-type: none
+      height: $logo + $small - $tiny
+      line-height: $logo
+
+      a
+        padding: 1em
+        border-right: 1px solid red
+
+    li:last-child
+      a
+        padding-right: 0
+        border-right: 0
+
+  .logo
+    position: absolute
+    border: 1px solid #cccccc
+    background: #dedede
+    width: $logo
+    height: $logo
+
+

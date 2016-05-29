@@ -1,0 +1,126 @@
+
+@import 'vars'
+
+#users_organizer
+  .extended-forms-content
+    display: none
+
+    fieldset
+      clear: both
+
+      input
+        float: left
+      a
+        float: left
+        margin-left: .5em
+
+    input
+      &[type="text"]
+        border: 1px solid #c2c2c2
+        border-radius: 5px
+        padding: 5px
+        height: 41px
+      &[type=submit]
+        height: 41px
+        border: 0
+        color: #0066cc
+        font-weight: bold
+        width: 62px
+      &[type="text"]
+        width: 50%
+
+  .scratchpad
+    clear: both
+    margin-top: 10px
+
+    input[type=submit]
+      background: white
+      width: auto
+      margin-right: auto
+      margin-left: auto
+      display: block
+
+    .scratchpad-content
+      display: none
+
+    textarea
+      height: 400px
+      width: 400px
+        
+  .trash
+
+    fieldset
+      padding: 0 0 10px 0
+
+    textarea, input
+      box-sizing: border-box
+      -moz-box-sizing: border-box
+      /* Firefox
+      -webkit-box-sizing: border-box
+      /* Safari
+      font-family: arial
+
+    textarea
+      border: 1px solid #c2c2c2
+      border-radius: 5px
+      padding: 5px
+
+
+    .extended-forms-content
+      
+
+    .create
+      fieldset
+        padding: 20px 0
+      label, textarea, input[type=submit]
+        display: block
+      label, textarea
+        margin-bottom: 10px
+      input[type=submit]
+        background: url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png) no-repeat scroll -331px 0px transparent
+        &:hover, &:active
+          background: url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png) no-repeat scroll -331px -48px transparent
+
+    label
+      font-weight: bold
+      a
+        background: url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png) no-repeat scroll 0 -133px transparent
+        display: inline-block
+        height: 17px
+        margin-left: 5px
+        text-indent: -9999px
+        width: 16px
+
+    textarea
+      width: 100%
+      height: 100px
+
+    input.search
+      margin-left: 1%
+      text-indent: -9999px
+      background-image: url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png), url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png)
+      background-repeat: no-repeat, no-repeat
+      background-position: -453px 6px, -331px 0px
+      background-color: transparent
+      &:hover, &:active
+        background-image: url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png), url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png)
+        background-repeat: no-repeat, no-repeat
+        background-position: -453px -29px, -331px -48px
+        background-color: transparent
+
+    button.list
+      margin-left: 1%
+      text-indent: -9999px
+      background-image: url(https://s3.amazonaws.com/ish-assets/icons/32x32/list.png)
+      background-repeat: no-repeat, no-repeat
+      background-color: transparent
+      width: 62px
+      height: 41px
+      &:hover, &:active
+        background-image: url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png), url(https://s3.amazonaws.com/ish-assets/organizer/sprite2.png)
+        background-repeat: no-repeat, no-repeat
+        background-position: -459px -97px, -331px -48px
+        background-color: transparent
+
+
+    

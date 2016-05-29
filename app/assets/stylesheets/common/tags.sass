@@ -1,0 +1,64 @@
+@import 'vars'
+#tags_index
+  .feature-tags-list,
+  .tags-list,
+      
+    // @extend ._2_1
+
+    margin-bottom: 1.5em
+
+    .item
+      ul li
+        @extend ._block
+
+    h2
+      margin-bottom: -10px
+
+    .children-tags-list
+      margin-left: 1.5em
+
+    .tag-galleries
+      border-left: 2px solid cyan
+      padding-left: 5px
+      margin-bottom: 5px
+
+    .tag-reports
+      // border-left: 2px solid orange
+      padding-left: 5px
+      margin-bottom: 5px
+        
+    .tag-item
+      margin-bottom: 2em
+
+  h2.level-1
+    font-size: 20px
+      
+  h2.level-2
+    font-size: 18px
+      
+  h2.level-3
+    font-size: 16px
+      
+  h2.level-4
+    font-size: 14px
+
+  .tag-item-level-1
+    border: 1px solid #cccccc
+    padding: 0 20px
+      
+#tags_show
+  .head-1, .foot-1
+    @extend .span-24
+    @extend .last
+
+  .col-1
+    @extend .span-12
+    @extend .colborder
+
+  .col-2
+    @extend .span-11
+    @extend .last
+
+  .inner
+    @extend .box
+    @extend ._round-corners

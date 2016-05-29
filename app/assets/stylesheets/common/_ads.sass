@@ -1,0 +1,77 @@
+  
+@import 'vars.sass'
+
+.ad
+  display: inline-block
+
+.ad_large_rectangle,
+.ad-large-rectangle
+  width: 336px
+  height: 280px
+  @extend .ad
+
+.ad_skyscraper,
+.ad-skyscraper,
+.skyscraper-gray-blue,
+.skyscraper-gray-blue-dark,
+  width: 160px
+  height: 600px
+  @extend .ad
+
+.ad-leaderboard,
+.ad_leaderboard,
+.ads-leaderboard
+  width: 728px
+  height: 90px
+  margin: .5em 0
+  @extend .ad
+
+.ad-wide-skyscraper
+  @extend .ad
+  width: 160px
+  height: 600px
+
+.ad-medium-rectangle
+  @extend .ad
+  width: 300px
+  height: 250px
+
+.links-vertical-large
+  @extend .ad
+  width: 200px
+  height: 90px
+
+
+.wide-line
+  @extend .ad
+  width: 728px
+  height: 15px
+
+.ad-half-banner
+  @extend .ad
+  width: 234px
+  height: 60px
+
+
+#users_index
+  #ad_wide_skyscraper
+    @extend #ad_skyscraper_hanging !optional
+
+.links-horizontal-large
+  margin-top: 5px
+
+.leaderboard-gray-blue
+  margin: 0 auto
+  text-align: center
+
+.ad-banner
+  margin-bottom: 1em
+  text-align: center
+
+.ad-small-square-gray,
+.ad-small-square-blue,
+  @extend ._round-corners !optional
+  @extend .box !optional
+  padding: 10px 0 10px 0
+  text-align: center
+

@@ -1,0 +1,25 @@
+/*
+ *= require foundation/foundation
+ *= require fancybox/jquery.fancybox.css
+ *
+ *= require_directory ./common_2
+ *= require_directory ./application_foundation
+ *
+ *
+ */
+
+body#galleries_show .show_long_link,
+body#galleries_show .show_photo_link,
+body#galleries_show .galleries-set-show-style ul.menu li span {
+    padding: 10px;
+    top: -10px;
+    position: relative;
+}
+
+body#galleries_show .show-long .show_long_link,
+body#galleries_show .show-photo .show_photo_link {
+    background: #eeeeee;
+    padding: 10px;
+    top: -10px;
+    position: relative;
+}

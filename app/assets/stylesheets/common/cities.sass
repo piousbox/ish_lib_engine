@@ -1,0 +1,202 @@
+@import 'vars'
+
+#cities_index
+  .Lapplication,
+  .Lapplication-mini,
+    .cities-features
+      @extend ._4_1
+
+      .inner
+        @extend .box
+
+    ul.menu-secondary
+      margin: 0
+      padding: 0
+      
+      li
+        margin: 0
+        padding: 0
+        display: inline
+        list-style-type: none
+        height: $menu_secondary_height
+        line-height: $menu_secondary_height
+
+        border: 2px solid gray
+        padding: 10px
+        float: left
+        background: #dedede
+
+      .most-interesting
+        -moz-border-top-left-radius: 15px
+        border-top-left-radius: 15px
+        // -moz-border-bottom-left-radius: 15px
+        // border-bottom-left-radius: 15px
+        background: $light_bg
+        border-bottom: 0
+
+      .my-city
+        border-left: 0
+        border-bottom: 0
+
+      .customize
+        border: 0
+        background: transparent
+        line-height: $menu_secondary_height + 2 * $border_width
+        background: url('https://s3.amazonaws.com/ish-assets/icons/24x24/configure.png') left center no-repeat
+        padding-left: 36px
+        margin-left: 4px
+
+    .footer
+      height: 200px
+
+  .Lcities
+    .cities-features
+      margin-bottom: 20px
+
+      .inner
+        height: 104px
+
+        h3
+          margin: 0
+          padding: 0
+          line-height: 100px
+
+.Lcities
+  .all-cities-2
+    width: 100%
+    height: 100%
+
+#cities_index_canvas
+  width: 100%
+  height: 100%
+  clear: both
+
+.Lcities,
+.Lapplication,
+.Lapplication-mini,
+  .all-cities
+    clear: both
+    position: relative
+
+    ul
+      list-style-type: none
+      height: 400px
+      width: 220px
+      overflow: auto
+      text-align: left
+      margin: $margin
+
+      position: absolute
+      right: 0
+      top: 0
+
+      li
+        margin: 0
+        padding: 0
+        display: block
+
+    .inner
+      background: #e5eCf9
+
+      li
+        margin-bottom: .5em
+
+.Lorganizer
+  .all-cities
+    position: relative
+    height: 400px
+    clear: both
+    margin: 0 auto 2em auto
+
+    #cities_index_canvas
+      clear: both
+      width: 440px
+      height: 400px
+      background: yellow
+
+    ul
+      list-style-type: none
+      position: absolute
+      left: 450px
+      top: 0
+      width: 190px
+      height: 400px
+      overflow: auto
+
+      margin: 0
+      padding: 0
+
+      li
+        margin: 0
+        padding: 0
+
+#reports_index .menu-secondary .reports-link a,
+#venues_index .menu-secondary .venues-link a,
+#galleries_index .menu-secondary .galleries-link a,
+#users_index .menu-secondary .users-link a,
+  background: yellow
+
+#cities_profile,
+#reports_index,
+#users_index,
+#galleries_index,
+#venues_index,
+  .Lapplication,
+  .Lapplication-mini,
+
+    .head-1
+      @extend .span-24
+
+    .col-0
+      @extend .span-5
+      .ad-skyscraper
+        padding-right: 10px
+        border-right: 1px solid #ddd
+
+    .col-1
+      @extend .span-13
+      @extend .colborder
+
+      .reports-list,
+      .venues-list,
+      .galleries-list,
+        .item
+          @extend .box
+          @extend ._round-corners
+          
+      .users-list
+        .inner
+          @extend ._round-corners
+          h3
+            margin-top: 0
+
+    .col-2
+      @extend .span-5
+      @extend .last
+
+    .foot-1
+      @extend .span-24
+
+    .calendar
+      text-align: center
+      border: 1px solid red
+      margin-top: 1.5em
+
+    .map-container
+      border: 1px solid red
+
+  ul.menu-secondary
+    margin-bottom: $margin
+
+    a
+      padding: .5em
+      @extend ._round-corners
+      background: $blue
+
+.cities-meta
+  display: inline
+
+.cities-features
+  .inner
+    @extend ._round-corners
+

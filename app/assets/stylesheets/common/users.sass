@@ -1,0 +1,96 @@
+@import 'vars'
+
+.profile-photo
+  @extend .thumb !optional
+
+.inline-registration
+  display: none
+
+#users_index
+  .users-list
+
+    .inner
+      @extend .box !optional
+    .item:nth-child(2n+1)
+      clear: both
+
+  .title
+    margin: 0 0 1em 0
+    padding: 0 1em
+
+    h1
+      margin: 0
+      padding: 0
+      line-height: $logo/2
+      height: $logo/2
+      float: left
+
+    .users-search
+      float: right
+      line-height: $logo/2
+      height: $logo/2
+      
+  .item
+    padding-bottom: 2em
+      
+    .inner
+      padding-right: 1em
+
+      h3
+        background: white
+        padding: .5em
+        margin-bottom: 10px
+
+  .n_items
+    float: right
+    padding: 2px
+    position: relative
+
+#users_organizer
+
+  .menu-secondary,
+  .my-profiles,
+  .set-city,
+  .set-profile-photo,
+    
+    width: 49%
+    float: left
+
+    ul
+      li
+        display: block
+          
+  .my-profiles,
+  .my-galleries,
+  .my-reports,
+  .my-videos,
+    margin-bottom: 5px
+
+    ul
+      li
+        display: block
+        margin: .3em 0
+
+  .my-reports ul,
+  .my-galleries ul,
+  .my-videos .list-small,
+    display: none
+
+  .my-videos,
+  .my-galleries,
+  .my-reports,
+    h2
+      background: #cfcfcf
+      padding: .5em
+      margin-right: 1em
+        
+  .set-city,
+  .set-profile-photo,
+    margin: .5em 0 30px 0
+            
+.help_content
+  display: none
+  font-size: 10px
+  width: 300px
+  position: absolute
+  z-index: 10

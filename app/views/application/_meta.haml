@@ -1,0 +1,18 @@
+
+- report ||= item
+
+.meta
+  = t('g.by')
+  - unless report.user.blank?
+    = link_to report.user.username, user_path(report.user.username)
+  - else
+    = t('users.anon')
+  - unless report.tag.blank?
+    = t('g.in')
+    = link_to report.tag.name, tag_path( report.tag.name_seo )
+  = t('g.on')
+  = pretty_date report.created_at
+  - unless report.city.blank?
+    = t('cities.in')
+    = link_to report.city.name, city_path( report.city.cityname )
+

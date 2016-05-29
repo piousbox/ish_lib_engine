@@ -1,0 +1,91 @@
+
+@import 'vars'
+@import 'bootstrap'
+
+.Lapplication-mini
+  min-height: 100%
+  position: relative
+
+  .mini-header
+    @extend .navbar
+    margin: .5em 0 1em 0
+    border-bottom: 0
+      
+    .mini-header-2
+      @extend .navbar-inner
+
+      .logo
+        padding-top: .4em
+        padding-bottom: 0
+        @extend .brand
+          
+    ul.main-menu
+      @extend .nav
+              
+  .mini-footer
+    margin-top: 3em
+    margin-bottom: 5em
+
+    ul
+      li
+        display: block
+        list-style-type: circle
+          
+    .set-locale > div
+      float: right
+      margin: 0 0 0 1em
+
+  .header-title      
+    h2
+      margin: 0
+        
+  .login-register
+
+    .ads-links-horizontal-medium
+      @extend .pull-right
+      clear: both
+        
+    ul
+      @extend .pull-right
+              
+    .li
+      float: left
+        
+    .sign-out
+      display: none
+        
+    li,
+    form,
+    div,
+      display: inline
+
+    li
+      border-left: 2px solid black
+      padding-left: 12px
+      margin-left: 12px
+
+    li:nth-child(1)
+      border-left: 0
+      padding-left: 0
+      margin-left: 0
+        
+  .header-search
+    @extend .pull-right
+    margin-top: 5px
+
+    form
+      padding: 0 !important
+      margin: 0 !important
+
+// cities, users are unnecessary
+#sites_show .main-menu .home,
+#galleries_index .main-menu .galleries,
+#galleries_show .main-menu .galleries,
+#reports_index .main-menu .reports,
+#reports_show .main-menu .reports,
+#tags_index .main-menu .tags,
+#tags_show .main-menu .tags,
+#videos_index .main-menu .videos,
+#videos_show .main-menu .videos,
+  
+  @extend .active

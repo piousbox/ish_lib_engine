@@ -1,0 +1,16 @@
+
+.login-register
+  %ul.inline-list
+    - if @current_user
+      %li
+        = link_to "-] #{@current_user.username} [-", organizer_path, :class => 'account navbar-link'
+      %li.sign-out= button_to t('users.sign_out'), destroy_user_session_path, :method => :delete, :class => :sign_out
+    - else
+      %li= link_to t('users.sign_in'), new_user_session_path, :class => :sign_in
+      - if !@site.is_private
+        %li= link_to t('users.sign_up'), new_user_registration_path, :class => :sign_up
+      %li= link_to t('users.account'), organizer_path, :class => :account
+
+  -# = render 'ads/links_horizontal_medium'
+
+
