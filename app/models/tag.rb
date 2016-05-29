@@ -31,6 +31,8 @@ class Tag
   belongs_to :site
   validates :site, :presence => true
 
+  belongs_to :user
+
   default_scope ->{
     where({ :is_public => true, :is_trash => false }).order_by({ :name => :asc })
   }
@@ -52,7 +54,7 @@ class Tag
   end
 
   def self.list
-    out = Tag.all.order_by( :name => :desc )
+    out = self.order_by( :name => :desc )
     [['', nil]] + out.map { |item| [ item.name, item.id ] }
   end
 

@@ -42,8 +42,19 @@ class Ability
       end
 
       can [ :newsitems_new, :newsitems_create ], Site
+
+      can [ :new, :create, :index ], Tag
+      can [ :show ], Tag do |tag|
+        if tag.is_public
+          return true
+        elsif tag.user == user
+          return true
+        else
+          return false
+        end
+      end
       
-      can [ :organizer, :photos, :new_profile, :create_profile, :edit_profile, :update_profile ], User
+      can [ :organizer, :photos, :new_profile, :create_profile, :edit_profile, :update_profile, :scratchpad ], User
       can [ :edit, :update, :update_profile ], User do |uu|
         uu == user
       end
@@ -51,6 +62,9 @@ class Ability
       can [ :new ], Venue
 
       can [ :new, :create ], Video
+      can [ :edit, :update ], Video do |v|
+        v.user == user
+      end
 
       # manager, group_id 1
       #
@@ -97,7 +111,7 @@ class Ability
     user ||= User.new
     
     ###
-    ### applies to all users
+    ### applies to all, and anonymous, users
     ###
 
     can [ :index, :show ], City
@@ -113,6 +127,8 @@ class Ability
 
     can [ :error500, :search ], Manager
 
+    can [ :ipn ], Paypal::Ipn
+    
     # has to be outside user auth b/c the uploading component is ajax.
     can [ :new, :create, :index, :do_upload, :not_found ], Photo
     can [ :show ], Photo do |photo|
@@ -146,7 +162,6 @@ class Ability
 
     can [ :index, :show, :view ], Video
 
-    can [ :home ], Welcome
   end
 end
 
